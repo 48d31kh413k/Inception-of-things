@@ -137,9 +137,6 @@ Learn self-hosted Git integration with Kubernetes. **For Bonus detailed document
 **Part 3 architecture:**
 ![GitOps architecture](img/architecture.jpeg)
 
-**Argo CD application list:**
-![Argo CD apps view](img/argo%20cd%20apps.png)
-
 **Argo CD application details and resource tree:**
 ![Argo CD app details](img/argo%20cd%20dashboard.png)
 
