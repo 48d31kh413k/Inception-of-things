@@ -134,6 +134,24 @@ Learn self-hosted Git integration with Kubernetes. **For Bonus detailed document
 
 **Expected outcome:** GitOps-driven deployment with automatic sync from GitHub
 
+**Part 3 architecture:**
+![GitOps architecture](img/architecture.jpeg)
+
+**Argo CD application list:**
+![Argo CD apps view](img/argo%20cd%20apps.png)
+
+**Argo CD application details and resource tree:**
+![Argo CD app details](img/argo%20cd%20dashboard.png)
+
+**Argo CD pod state (v2):**
+![Argo CD pod details](img/argo%20cd%20app.png)
+
+**Argo CD ReplicaSet details:**
+![Argo CD replica details](img/argo%20cd%20replica.png)
+
+**Argo CD sync status:**
+![Argo CD sync status](img/argo%20cd%20sync.png)
+
 **For detailed setup, GitHub integration, GitOps workflow, and evaluation checklist → [Read Part 3 README](p3/README.md)**
 
 ---
@@ -149,6 +167,12 @@ Learn self-hosted Git integration with Kubernetes. **For Bonus detailed document
 - Dedicated `gitlab` namespace
 
 **Eligibility:** Only evaluated if all mandatory parts (1, 2, 3) are flawless
+
+**Bonus setup output:**
+![Bonus installation output](img/script%20bonus.jpeg)
+
+**Bonus GitLab result:**
+![GitLab repository](img/gitlab%20local.jpeg)
 
 **For detailed setup, GitLab configuration, and troubleshooting → [Read Bonus README](bonus/README.md)**
 
@@ -337,6 +361,7 @@ cd p3
 Good luck! 🚀
 
 ---
+
 ## Team
 
 This project was delivered as a team effort:
