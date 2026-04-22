@@ -152,7 +152,7 @@ metadata:
   namespace: argocd        # Stores in argocd namespace (system level)
 spec:
   source:
-    repoURL: https://github.com/48d31kh413k/abboutah
+    repoURL: https://github.com/48d31kh413k/Inception-of-things
     targetRevision: main   # Always watch the 'main' branch
     path: p3/confs/app     # These files are the deployment spec
   
@@ -170,7 +170,7 @@ spec:
 
 **How it works (the GitOps loop):**
 1. Argo CD reads this resource
-2. Every 3 minutes, fetches https://github.com/48d31kh413k/abboutah
+2. Every 3 minutes, fetches https://github.com/48d31kh413k/Inception-of-things
 3. Looks inside `p3/confs/app/` for Kubernetes manifests
 4. Compares those manifests to what's running in the `dev` namespace
 5. If different, updates the cluster
@@ -459,7 +459,7 @@ cat confs/argocd-app.yaml | grep repoURL
 
 Expected output:
 ```
-    repoURL: https://github.com/48d31kh413k/abboutah
+    repoURL: https://github.com/48d31kh413k/Inception-of-things
 ```
 
 **Why:** Argo CD fetches manifests from this URL without authentication (public access only). If the repo is private, Argo CD gets `403 Forbidden` and sync fails.
@@ -898,7 +898,7 @@ git push origin main
 ```
 
 **What happens inside GitHub:**
-- Your commit goes to https://github.com/48d31kh413k/abboutah
+- Your commit goes to https://github.com/48d31kh413k/Inception-of-things
 - The `main` branch now includes v2 image tag
 - All changes pushed to remote (Argo CD can see them)
 
@@ -1041,7 +1041,7 @@ kubectl describe application playground -n argocd
 # Expected output includes:
 #   Sync Status: Synced (green)
 #   Health Status: Healthy (green)
-#   Repo: https://github.com/48d31kh413k/abboutah
+#   Repo: https://github.com/48d31kh413k/Inception-of-things
 #   Path: p3/confs/app
 #   Dest Namespace: dev
 ```
