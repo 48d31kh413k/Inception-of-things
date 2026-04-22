@@ -143,13 +143,11 @@ Learn self-hosted Git integration with Kubernetes. **For Bonus detailed document
 **Argo CD application details and resource tree:**
 ![Argo CD app details](img/argo%20cd%20dashboard.png)
 
-**Argo CD pod state (v2):**
+**Argo CD sync status:**
 ![Argo CD pod details](img/argo%20cd%20app.png)
 
-**Argo CD ReplicaSet details:**
-![Argo CD replica details](img/argo%20cd%20replica.png)
 
-**Argo CD sync status:**
+**Argo CD pod state (v2):**
 ![Argo CD sync status](img/argo%20cd%20sync.png)
 
 **For detailed setup, GitHub integration, GitOps workflow, and evaluation checklist → [Read Part 3 README](p3/README.md)**
